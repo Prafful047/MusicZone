@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(16, 15, 15); 
+    
+}
+
+.main{
+    display: flex;
+    /* overflow: auto; */
+    
+}
+
+.light-bg{
+   background-color: rgb(42, 34, 34);
+}
+
+.left-section{
+    width: 25vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-section{
+    width: 75vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ls-top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    
+}
+
+.lst-home{
+    height: 50%;
+    width: 100%;
+    color: white;
+    display: flex;   
+}
+
+.lsth-icon{
+    padding-right: 2vw;
+}
+
+.lsth-title a{
+    all: unset;
+}
+
+.hover h3:hover{
+    color: rgb(233, 117, 22);
+    cursor: pointer;
+
+}
+
+.lst-search{
+    height: 50%;
+    width: 100%;
+    color: white;
+    display: flex;
+    
+}
+
+.lsts-icon{
+    padding-right: 2vw;
+}
+
+.ls-bottom{
+    width: 100%;
+    height: 70%;
+    color: white;
+    text-align: center;
+    overflow: auto;
+}
+
+.rs-bottom{
+    width: 90%;
+    height: 70%;
+    color: white;
+    text-align: center;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: none;
+
+}
+
+.lsb-mp{
+    height: 12vh;
+    background-color: blanchedalmond;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rs-welcome{
+    width: 90%;
+    height: 15%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 117, 22);
+    
+}
+
+.rs-slider{
+    background-color: aliceblue;
+    width: 90%;
+    height: 25%;
+}
+
+.rs-list{
+    width: 90%;
+    height: 75%;
+    overflow: auto;
+}
+
+.rsl-dimage{
+    height: 12vh;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+.rsl-litem{
+    background-color: rgb(93, 56, 7);
+    color: white;
+}
+
+.rsl-litem span{
+    padding-right: 2rem;
+}
+
+.song-item{
+    background-color: rgb(8, 24, 57);
+    height: 12vh;
+    border: 1px solid rgb(69, 64, 64);
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.song-item:hover{
+    background-color: rgb(199, 128, 78);
+}
+
+.list-item{
+    background-color: rgb(8, 24, 57);
+    height: 12vh;
+    border: 1px solid rgb(69, 64, 64);
+    border-radius: 0.2rem;
+    display: flex;   
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.list-item:hover{
+    background-color: rgb(199, 128, 78);
+}
+
+.limg{
+    display: flex;
+    align-items: center;
+}
+
+.list-item img{
+    height: auto;
+    width: 10vw;
+    border-radius: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.img-div img{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 50%;
+    height: auto;
+    width: 8vw;
+}
+.nav-foot{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around ;
+    /* position: fixed; */
+}
+
+.nav-foot i{
+    color: white;
+    cursor: pointer;
+}
+
+#myprogressbar{
+    width: 50vw;
+}
+
+.nf-progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position:fixed; */
+
+}
+
+.nfp-icons{
+    height: 82%;
+}
+
+.nfp-icons i{
+    padding: 1vw;
+}
+
+.nf-volcontrol{
+    display: flex;
+    align-items: center;
+}
+
+.nf-songname{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.nf-songname img{
+    width: 5vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nf-songname span{
+    padding: 1.5rem;
+    white-space: nowrap;
+}
+
+/* Media Query for Tablets (Portrait) and Smartphones */
+@media only screen and (max-width: 1024px) {
+    /* Hide ls-top */
+    .left-section{
+        display: none;
+    }
+
+    .right-section{
+        width: 100%;
+    }
+
+    .rs-bottom{
+        display: inline;
+    }
+
+   
+ /* Expand rs-welcome to full width */
+    .rs-welcome {
+        width: 100%;
+    }
+    
+    .nf-progress{
+        justify-content: center;
+    }
+    .nfp-icons{
+        height: auto;
+    }
+
+    .nav-foot{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nf-songname{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .nf-volcontrol{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .song-item img{
+        width: 20vw;
+    }
+
+    .list-item img{
+        width: 30vw;
+    }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 1020px){
+    
+    .song-item img{
+        width: 15vw;
+    }
+
+    .list-item img{
+        width: 18vw;
+    }
+
+}
+
+
+
